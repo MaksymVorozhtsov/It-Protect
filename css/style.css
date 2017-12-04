@@ -125,9 +125,18 @@ header {
     background-color: #3075f3;
 }
 
+.headline-buttons a.cost:hover {
+    background-color: #2252AA;
+}
+
+
 .headline-buttons a.request {
     background-color: #22b731;
     margin-left: 30px;
+}
+
+.headline-buttons a.request:hover {
+    background-color: #188423;
 }
 
 .features {
@@ -185,6 +194,10 @@ header {
     border-radius: 25px;
     background-color: #3075f3;
     margin: 50px 0;
+}
+
+.security-wrap a.check:hover {
+    background-color: #2252AA;
 }
 
 .security-wrap p {
@@ -316,7 +329,6 @@ header {
     font-size: 40px;
     font-weight: bold;
     color: #fff;
-    height: 75px;
     background-color: #22b731;
     padding: 15px 0;
 }
@@ -486,6 +498,10 @@ header {
     color: #fff;
 }
 
+.form input[type="submit"]:hover {
+    background-color: #2252AA;
+}
+
 .testimonials {
     padding: 70px 0 130px 0;
     background-color: #e2e8f3;
@@ -643,10 +659,52 @@ footer {
         margin-left: 0;
     }
     
+    .navbar-default .navbar-collapse {
+        background-color: #3075F3;
+        margin-top: 16px;
+    }
+    
+    .container>.navbar-collapse {
+        margin: 0;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    
+    .navbar-brand>img {
+        margin-left: 30px;
+    }
+    
+    .navbar-toggle .icon-bar {
+        width: 35px;
+        height: 3px;
+    }
+    
+    .navbar-toggle {
+        padding: 6px 10px;
+    }
+    
+    .nav>li {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .navbar-nav {
+        margin: 0;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #fff;
+        text-align: center;
+        line-height: 36px;
+    }
+    
     .headline-text p {
         width: 80%;
         text-align: center;
         margin: 0 auto;
+        font-size: 28px;
+        line-height: 36px;
     }
     
     .headline-buttons {
@@ -657,6 +715,7 @@ footer {
     
     .headline-buttons a {
         text-align: center;
+        font-size: 16px;
     }
     
     .headline-buttons a.request {
@@ -671,5 +730,150 @@ footer {
     
     .security-wrap p {
         padding: 25px
+    }
+    
+    .security-wrap span {
+        padding: 0 10px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .creation-wrap h3 {
+        font-size: 28px;
+    }
+    
+    .creation-acc {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .clients-logos, 
+    .technologies-logos {
+        flex-direction: column;
+    }
+    
+    .clients-logos img, 
+    .technologies-logos img {
+        margin-bottom: 30px;
+    }
+    
+    .creation-acc-site, .creation-acc-nosite {
+        width: 100%;
+    }
+    
+    .slider {
+        height: auto;
+    }
+    
+    .slider-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slider-item-text {
+        margin: 0;
+    }
+    
+    .slider-item-text p, .slider-item-text h3 {
+        width: 80%;
+    }
+    
+    .slider-item-text h3 {
+        margin: 40px auto 0 auto;
+        font-size: 23px;
+        line-height: 32px;
+    }
+    
+    .slider-item-text p {
+        margin: 40px auto;
+        font-size: 19px;
+        line-height: 29px;
+    }
+
+    .reasons h2 {
+        font-size: 28px;
+    }
+    
+    .clients-wrap h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .about-wrap h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .about-wrap>p {
+        width: 80%;
+    }
+    
+    .about-text h4 {
+        padding: 40px 20px;
+    }
+    
+    .about-text-blocks {
+        flex-direction: column;
+    }
+    
+    .about-text span {
+        padding: 0 15px;
+    }
+    
+    .about-wrap span {
+        padding: 0 15px;
+    }
+    
+    .form {
+        flex-direction: column;
+    }
+    
+    .form input {
+        width: 80%;
+        margin: 0 auto 40px auto;
+    }
+    
+    .testimonials-headline {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .testimonials-slider-item {
+        margin-top: 40px;
+    }
+    
+    .testimonials-slider-item-text {
+        padding: 0px 25px;
+    }
+    
+    .technologies-wrap h3 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 90%;
+        margin: 0 auto 35px auto;
+    }
+    
+    .footer-top .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-top-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-top-left p {
+        padding: 15px;
+    }
+    
+    .footer-top-right {
+        margin: 0 15px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
     }
 }
