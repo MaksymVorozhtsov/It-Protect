@@ -337,15 +337,70 @@ header {
     color: #fff;
     background-color: #22b731;
     padding: 15px 0;
+    z-index: 5;
 }
 
 .slider {
     height: 600px;
     padding: 150px 0 0 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-container {
+    position: relative;
+}  
+
+.swiper-pagination {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 45%;
+    z-index: 100;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    left: 95%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-bottom: 15px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #22b731;
 }
 
 .slider-01 {
     background-image: url(../img/slide-01.jpg);
+}
+
+.slider-02 {
+    background-image: url(../img/slide-02.jpg);
+}
+
+.slider-03 {
+    background-image: url(../img/slide-03.jpg);
+}
+
+.slider-04 {
+    background-image: url(../img/slide-04.jpg);
+}
+
+.slider-05 {
+    background-image: url(../img/slide-05.jpg);
+}
+
+.slider-06 {
+    background-image: url(../img/slide-06.jpg);
 }
 
 .slider-item {
@@ -970,6 +1025,7 @@ footer {
     
     .creation-acc-site, .creation-acc-nosite {
         width: 100%;
+        height: auto;
     }
     
     .slider {
@@ -1002,7 +1058,7 @@ footer {
     }
 
     .reasons h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
     
     .clients-wrap h3 {

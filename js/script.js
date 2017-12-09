@@ -25,3 +25,13 @@ $(document).ready(function () {
 });
 
 new WOW().init();
+
+var group =1;
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    slidesPerView: group,            
+    spaceBetween: 30,
+    slidesPerGroup: group
+});
