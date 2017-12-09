@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>ItProtect Inc.</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="icon" href="img/favicon.png" type="image/png">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
@@ -21,11 +22,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" alt="ItProtect"><img src="img/logo.png" alt="logo" width="210" height="47" class="wow fadeInDown" data-wow-delay="0.1s"></a>
+                        <a class="navbar-brand" href="#" alt="ItProtect">
+                            <img src="img/logo.png" alt="logo" width="210" height="47" class="wow fadeInDown" data-wow-delay="0.1s">
+                        </a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right wow fadeInDown" data-wow-delay="0.1s">
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="about.html">О компании</a></li>
                             <li><a href="#">Услуги</a></li>
                             <li><a href="#">Клиенты</a></li>
                             <li><a href="#">Контакты</a></li>
@@ -43,7 +46,7 @@
                         <p class="wow fadeInDown" data-wow-delay="0.4s">Разработаем или обновим сайты любой сложности, обеспечив высочайший уровень защиты от атак</p>
                     </div>
                     <div class="headline-buttons">
-                        <a href="" class="cost wow fadeInDown" data-wow-delay="0.5s">Рассчитать стоимость</a>
+                        <a href="" class="cost wow fadeInDown" id="cost" data-wow-delay="0.5s">Рассчитать стоимость</a>
                         <a href="#request" class="request wow fadeInDown" data-wow-delay="0.5s">Оставить заявку</a>
                     </div>
                 </div>
@@ -398,6 +401,32 @@
                 </ul>
             </div>
         </footer>
+        
+        <div id="modal">
+            <div class="modal-close">X</div>
+                <div class="modal-wrap">
+                    <h2 class="modal-title">Get a quote for required services</h2>
+                    <form action="#" class="modal-form">
+                        <div class="modal-input-wrap">
+                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="Phone number">
+                            <input type="text" placeholder="Email address">
+                            <input type="text" placeholder="Company">
+                            <input type="text" placeholder="Website">
+                            <label for="file" class="modal-file-container">Attach file<input type="file" name="file" id="file"></label>
+                        </div>
+                        <label for="agreement" class="modal-agreement">
+                            <input id="agreement" class="visually-hidden" type="checkbox" name="agreement" checked>
+                            <span class="modal-checkbox-indicator"></span>
+                            <p class="modal-agreement-text">By clicking the "Send" button, you agree to the processing of your personal data in accordance with the terms of the "Privacy Policy"</p>
+                        </label>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="overlay"></div>  
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/animation.min.js"></script>
