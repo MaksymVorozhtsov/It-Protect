@@ -1,3 +1,21 @@
+var group =1;
+
+var Swiper6 = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    slidesPerView: group,            
+    spaceBetween: 0,
+    slidesPerGroup: group,
+    loop: true,
+});
+
+var SwiperRev = new Swiper('.testimonials .swiper-container', {
+    pagination: '.testimonials-pagination .swiper-pagination',
+    loop: true,
+});
+    
+new WOW().init();
+
 function OffScroll () {
     var winScrollTop = $(window).scrollTop();
         $(window).bind('scroll',function () {
@@ -22,16 +40,4 @@ $(document).ready(function () {
             }
         );
 	});
-});
-
-new WOW().init();
-
-var group =1;
-
-var swiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    slidesPerView: group,            
-    spaceBetween: 30,
-    slidesPerGroup: group
 });
