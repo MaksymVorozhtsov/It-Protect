@@ -1,3 +1,5 @@
+new WOW().init();
+
 var group =1;
 
 var Swiper6 = new Swiper('.swiper-container', {
@@ -13,8 +15,6 @@ var SwiperRev = new Swiper('.testimonials .swiper-container', {
     pagination: '.testimonials-pagination .swiper-pagination',
     loop: true,
 });
-    
-new WOW().init();
 
 function OffScroll () {
     var winScrollTop = $(window).scrollTop();
